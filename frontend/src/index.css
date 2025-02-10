@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-custom {
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #231f20;
+  --primary-light-color: #443e40;
+  --button-bg-color: #81fba5;
+  --secondary-color: #ffffff;
+  --dengrous-color: red;
+}
+
+.custom-radio {
+  appearance: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 2px solid green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.custom-radio:checked {
+  background-color: white;
+}
+
+.custom-radio:checked::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: green;
+  border-radius: 50%;
+  display: block;
+}
+
+.sidebar-scrollbar {
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+}
+
+/* Webkit scrollbar styles */
+.sidebar-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.sidebar-scrollbar1::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-track,
+.sidebar-scrollbar1::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb,
+.sidebar-scrollbar1::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb:hover,
+.sidebar-scrollbar1::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.header-color {
+  color: #000000;
+  background-color: #eeeeee;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  border-right: 2px solid rgb(205, 184, 184);
+}
+
+.header-color1 {
+  border-right: 2px solid rgb(228, 222, 222);
+}
+
+.select-search-select {
+  overflow: auto;
+  max-height: 200px;
+}
+
+
+.custom-datepicker {
+  width: 400px !important;  /* Control popup width */
+  max-height: 350px !important;  /* Prevent oversized popups */
+ 
+}
+
+.react-datepicker__header {
+  background-color: #ebf4ff !important;  /* Light blue header */
+}
+
+.react-datepicker__day {
+  width: 40px !important;  /* Control day size */
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding-top: 7px;
+}
+
+.react-datepicker__day--selected {
+  background-color: #2563eb !important; /* Tailwind blue-600 */
+  color: white !important;
+}
+
+.react-datepicker {
+  border-radius: 10px !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

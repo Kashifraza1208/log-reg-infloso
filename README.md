@@ -15,7 +15,7 @@ Ensure you have the following installed on your system:
 1. **Clone the Repository:**
 
    ```sh
-   git clone [REPO_URL]
+   git clone https://github.com/Kashifraza1208/log-reg-infloso.git
    cd backend
    ```
 
@@ -73,12 +73,6 @@ Ensure you have the following installed on your system:
 - npm or yarn (package manager)
 
 ### Installation Steps
-
-1. **Clone the Repository:**
-
-   ```sh
-   git clone [REPO_URL]
-   ```
 
 1. **Navigate to the Frontend Directory:**
 

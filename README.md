@@ -62,6 +62,12 @@ Ensure you have the following installed on your system:
    - `POST /api/v1/reset/password/:token` - Reset password
    - `POST /api/v1/refresh-token` - Refresh authentication token
    - `GET /api/v1/me` - Fetch authenticated user details
+  
+7. **View Data in pgAdmin:**
+   - Open `pgAdmin`
+   - Connect to your PostgreSQL database
+   - Navigate to your database schema and view tables/data
+
 
 ## Frontend Setup
 
